@@ -1,0 +1,74 @@
+@import url(root.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--y-main-bg);
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--y-sidebar-bg);
+  padding: 12px;
+  overflow: auto;
+  position: fixed;
+  left: 0;
+  top: var(--y-header-height);
+}
+
+.aside-item {
+  display: flex;
+  gap: 24px;
+  padding: 0 12px;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.aside-item:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.aside-item .sidebar-text {
+  color: white;
+}
+
+.aside-item-group {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.168);
+  padding: 10px 0;
+}
+
+.aside-item .sidebar-title-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--y-header-bg);
+  width: 100%;
+  height: var(--y-header-height);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  align-items: center;
+}
+
+header .header-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+header .profile-img img {
+  border-radius: 9999px;
+}
